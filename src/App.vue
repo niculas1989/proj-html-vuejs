@@ -1,6 +1,14 @@
 <template>
-  <div class="container">
-    <p class="text-center">PRIMA PROVA</p>
+  <div>
+    <header>
+      <Jumbotron />
+    </header>
+    <main>
+      <Main />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
