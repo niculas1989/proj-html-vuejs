@@ -39,7 +39,40 @@
         </nav>
       </div>
     </div>
-    <div id="jumbotron"></div>
+    <div id="jumbotron">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" id="personal-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span id="logo">NEXT</span>GEN</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">GET IN TOUCH</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -68,5 +101,22 @@ export default {
   background-image: url(../assets/img/hero-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+#logo {
+  color: #038483;
 }
 </style>
