@@ -39,38 +39,69 @@
         </nav>
       </div>
     </div>
-    <div id="jumbotron">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg" id="personal-nav">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span id="logo">NEXT</span>GEN</a>
-            <button class="navbar-toggler" type="button">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">PRICING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">BLOG</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">GET IN TOUCH</a>
-                </li>
-              </ul>
+    <div class="position-relative">
+      <div id="jumbotron">
+        <div class="container h-100">
+          <nav class="navbar navbar-expand-lg" id="personal-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><span id="logo">NEXT</span>GEN</a
+              >
+              <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">PRICING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">GET IN TOUCH</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
+          <div
+            id="lead-customer"
+            class="
+              d-flex
+              align-items-center
+              justify-content-center
+              h-100
+              flex-column
+            "
+          >
+            <section class="text-center">
+              <h1 id="title">Lead ~ Customer</h1>
+              <p>
+                Successful strategies require data analysis, creativity and
+                customer focus, taking advantage of the best and latest
+                technologies to offer excellent services.
+              </p>
+            </section>
+            <section>
+              <button type="button" class="btn btn-info me-3">
+                GET IN TOUCH
+              </button>
+              <button type="button" class="btn btn-outline-info">
+                READ MORE
+              </button>
+            </section>
           </div>
-        </nav>
+        </div>
       </div>
     </div>
   </div>
@@ -101,19 +132,19 @@ export default {
   background-image: url(../assets/img/hero-image.png);
   background-repeat: no-repeat;
   background-size: cover;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+}
+
+#personal-nav {
+  font-weight: 600;
+  height: 50px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#lead-customer {
+  color: white;
 }
 
 #logo {
