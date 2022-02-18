@@ -75,7 +75,7 @@ export default {
 }
 
 #pricing {
-  height: 700px;
+  height: 500px;
   background-color: $background_first_section;
 }
 </style>

@@ -7,8 +7,8 @@
         <h2><span class="bck-prim">Pricing</span> Table</h2>
         <p>
           We can help you deliver and execute your future, wherever you compete,
-          using the latest technologies, from strategy development to
-          implementation.
+          using the latest<br />
+          technologies, from strategy development to implementation.
         </p>
       </div>
     </div>
@@ -46,9 +46,9 @@
         <div class="col-4">
           <div class="card container">
             <div class="text-center">
-              <i class="fa-solid fa-rocket"></i>
-              <div><strong>Standard</strong></div>
-              <div class="price fw-bolder">$490/<em>mo</em></div>
+              <i class="fa-solid fa-briefcase"></i>
+              <div><strong>Professional</strong></div>
+              <div class="price fw-bolder">$890/<em>mo</em></div>
             </div>
             <ul v-for="(i, index) in item" :key="index" class="container">
               <li class="d-flex justify-content-between p-2">
@@ -59,7 +59,7 @@
                 {{ i.platform }} <i class="fa-solid fa-check"></i>
               </li>
               <li class="d-flex justify-content-between p-2">
-                {{ i.business }} <i class="fa-solid fa-xmark"></i>
+                {{ i.business }} <i class="fa-solid fa-check"></i>
               </li>
               <li class="d-flex justify-content-between p-2">
                 {{ i.dedicated }} <i class="fa-solid fa-xmark"></i>
@@ -73,9 +73,9 @@
         <div class="col-4">
           <div class="card container">
             <div class="text-center">
-              <i class="fa-solid fa-rocket"></i>
-              <div><strong>Standard</strong></div>
-              <div class="price fw-bolder">$490/<em>mo</em></div>
+              <i class="fa-regular fa-gem"></i>
+              <div><strong>Ultimate</strong></div>
+              <div class="price fw-bolder">$1.390/<em>mo</em></div>
             </div>
             <ul v-for="(i, index) in item" :key="index" class="container">
               <li class="d-flex justify-content-between p-2">
@@ -86,13 +86,13 @@
                 {{ i.platform }} <i class="fa-solid fa-check"></i>
               </li>
               <li class="d-flex justify-content-between p-2">
-                {{ i.business }} <i class="fa-solid fa-xmark"></i>
+                {{ i.business }} <i class="fa-solid fa-check"></i>
               </li>
               <li class="d-flex justify-content-between p-2">
-                {{ i.dedicated }} <i class="fa-solid fa-xmark"></i>
+                {{ i.dedicated }} <i class="fa-solid fa-check"></i>
               </li>
               <li class="d-flex justify-content-between p-2">
-                {{ i.personal }} <i class="fa-solid fa-xmark"></i>
+                {{ i.personal }} <i class="fa-solid fa-check"></i>
               </li>
             </ul>
           </div>
@@ -111,6 +111,12 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+.row {
+  .card {
+    border-radius: 10px;
+  }
+}
 
 .over-the-title {
   color: $water_green;
