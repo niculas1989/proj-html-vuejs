@@ -1,36 +1,38 @@
 <template>
   <div>
     <header>
-      <Jumbotron />
+      <HeadJumbotron :info="headerInfo" />
     </header>
     <main>
-      <Main />
+      <MainSection />
     </main>
     <footer>
-      <Footer />
+      <FooterPage />
     </footer>
   </div>
 </template>
 
 <script>
-import Jumbotron from "./components/Jumbotron.vue";
-import Main from "./components/Main.vue";
-import Footer from "./components/Footer.vue";
+import HeadJumbotron from "./components/HeadJumbotron.vue";
+import MainSection from "./components/MainSection.vue";
+import FooterPage from "./components/FooterPage.vue";
 
 export default {
   name: "App",
   components: {
-    Jumbotron,
-    Main,
-    Footer,
+    HeadJumbotron,
+    MainSection,
+    FooterPage,
   },
   data() {
     return {
-      headerInfo: {
-        open: "Mon-Sat-9:00-18:00",
-        tel: "+1(305) 1234-5678",
-        email: "hello@example.com",
-      },
+      headerInfo: [
+        {
+          open: "Mon-Sat-9:00-18:00",
+          tel: "+1(305) 1234-5678",
+          email: "hello@example.com",
+        },
+      ],
     };
   },
 };
