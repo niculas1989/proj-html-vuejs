@@ -62,4 +62,11 @@ export default {
     text-decoration: none;
   }
 }
+
+#jumbotron {
+  height: 1500px;
+  background-image: url(../assets/img/hero-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
