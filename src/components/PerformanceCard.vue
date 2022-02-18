@@ -81,4 +81,8 @@ p {
   width: 280px;
   background-color: #fff;
 }
+
+i {
+  color: $prim_color;
+}
 </style>
