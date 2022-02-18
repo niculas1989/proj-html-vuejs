@@ -128,10 +128,17 @@ export default {
 }
 
 #jumbotron {
-  height: 1500px;
+  /*
+  ! CAPIRE COME SISTEMARE L'OPACITY NEL BG
+  */
+  height: 700px;
   background-image: url(../assets/img/hero-image.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  #title {
+    font-weight: 800;
+  }
 }
 
 #personal-nav {

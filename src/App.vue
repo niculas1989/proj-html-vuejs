@@ -1,6 +1,7 @@
 <template>
   <div>
     <header>
+      <!-- SISTEMARE OPACITY -->
       <HeadJumbotron :info="headerInfo" />
     </header>
     <main>
