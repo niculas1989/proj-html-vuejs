@@ -93,10 +93,10 @@
               </p>
             </section>
             <section>
-              <button type="button" class="btn btn-info me-3">
+              <button id="first-btn" type="button" class="btn btn me-3">
                 GET IN TOUCH
               </button>
-              <button type="button" class="btn btn-outline-info">
+              <button id="second-btn" type="button" class="btn btn-outline">
                 READ MORE
               </button>
             </section>
@@ -114,6 +114,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/scss/_vars.scss";
+
 #header-top {
   height: 50px;
   background-color: #4e4d51;
@@ -154,7 +156,17 @@ a {
   color: white;
 }
 
+#first-btn {
+  background-color: $prim_color;
+  color: white;
+}
+
+#second-btn {
+  border-color: $prim_color;
+  color: white;
+}
+
 #logo {
-  color: #038483;
+  color: $prim_color;
 }
 </style>
