@@ -65,7 +65,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "PerformanceCard",
+};
 </script>
 
 <style scoped lang="scss">

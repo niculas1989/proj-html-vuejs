@@ -45,7 +45,7 @@
           <nav class="navbar navbar-expand-lg" id="personal-nav">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"
-                ><span id="logo">NEXT</span>GEN</a
+                ><span id="logo" class="bck-prim">NEXT</span>GEN</a
               >
               <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -109,12 +109,20 @@
 
 <script>
 export default {
+  name: "HeaderJumbotron",
   props: ["info"],
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+.bck-prim {
+  color: $prim_color;
+  height: 20px;
+  width: 30px;
+  background-color: $water_green;
+  border-radius: 3px;
+}
 
 #header-top {
   height: 50px;

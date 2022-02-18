@@ -3,7 +3,7 @@
     <div class="col-4 offset-2 h-100">
       <div class="d-flex flex-column justify-content-center h-100">
         <span class="over-the-title">ABOUT THE NETWORK</span>
-        <h2 class="fw-bolder"><span id="colored">The</span> Company</h2>
+        <h2 class="fw-bolder"><span class="bck-prim">The</span> Company</h2>
         <span
           >For 12 years we have been providing audit and warranty, financial
           advice, risk advice, taxes and releted services to select
@@ -52,11 +52,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "CompanySection",
+};
 </script>
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+.bck-prim {
+  color: $prim_color;
+  height: 20px;
+  width: 30px;
+  background-color: $water_green;
+  border-radius: 3px;
+}
+
 p {
   font-size: 0.6rem;
   color: $text_primary;

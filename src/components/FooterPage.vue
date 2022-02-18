@@ -3,7 +3,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "FooterPage",
+};
 </script>
 
 <style scoped lang="scss">

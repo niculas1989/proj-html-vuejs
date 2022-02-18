@@ -17,6 +17,12 @@
       <!-- DA RIVEDERE -->
       <ExcellenceSection />
     </section>
+
+    <!-- Sezione in cui descriviamo le eccellenze dell'azienda -->
+    <section id="pricing">
+      <!-- DA RIVEDERE -->
+      <PricingSection :item="price" />
+    </section>
   </div>
 </template>
 
@@ -24,11 +30,28 @@
 import PerformanceCard from "./PerformanceCard.vue";
 import CompanySection from "./CompanySection.vue";
 import ExcellenceSection from "./ExcellenceSection.vue";
+import PricingSection from "./PricingSection.vue";
+
 export default {
+  name: "MainSection",
   components: {
     PerformanceCard,
     CompanySection,
     ExcellenceSection,
+    PricingSection,
+  },
+  data() {
+    return {
+      price: [
+        {
+          standard: "Standard Accounting",
+          platform: "Platform Access",
+          business: "Business Orientation",
+          dedicated: "Dedicated Consulent",
+          personal: "Personal Assistance",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -49,5 +72,10 @@ export default {
   height: 700px;
   background-color: #121117;
   color: white;
+}
+
+#pricing {
+  height: 700px;
+  background-color: $background_first_section;
 }
 </style>

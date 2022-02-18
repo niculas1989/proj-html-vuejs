@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-4">
     <span class="over-the-title">OUR BUSINESS AREAS</span>
-    <h2>Excellence in <span>Services</span></h2>
+    <h2>Excellence in <span class="bck-prim">Services</span></h2>
     <div class="row">
       <div class="col-10">
         <p>
@@ -107,11 +107,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "ExcellenceSection",
+};
 </script>
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+.bck-prim {
+  color: $prim_color;
+  height: 20px;
+  width: 30px;
+  background-color: $water_green;
+  border-radius: 3px;
+}
+
 button {
   border-color: $prim_color;
   color: white;
@@ -125,7 +135,7 @@ button {
 
 .square {
   height: 200px;
-  width: 210px;
+
   background-color: #1e2223;
 }
 
