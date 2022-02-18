@@ -14,13 +14,21 @@
             >
           </section>
           <section id="right-info">
-            <span>{{ i.tel }}</span>
-            <span>{{ i.email }}</span>
-            <span>
+            <span class="pe-3"
+              ><a href="#">
+                {{ i.tel }}
+              </a></span
+            >
+            <span class="pe-3">
               <a href="#">
+                {{ i.email }}
+              </a>
+            </span>
+            <span>
+              <a href="#" class="pe-2">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="#">
+              <a href="#" class="pe-2">
                 <i class="fa-brands fa-twitter"></i>
               </a>
               <a href="#">
@@ -44,10 +52,14 @@ export default {
 <style scoped lang="scss">
 #header-top {
   height: 50px;
-  background-color: #778a94;
+  background-color: #4e4d51;
   color: #e3e7df;
   .fa-brands {
     color: #e3e7df;
+  }
+  a {
+    color: #e3e7df;
+    text-decoration: none;
   }
 }
 </style>
