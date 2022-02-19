@@ -172,6 +172,9 @@ a {
 #second-btn {
   border-color: $prim_color;
   color: white;
+  &:hover {
+    background-color: $prim_color;
+  }
 }
 
 #logo {

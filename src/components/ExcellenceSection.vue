@@ -56,6 +56,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
+
             <button type="button" class="btn btn-outline">READ MORE</button>
           </div>
         </div>
@@ -125,6 +126,9 @@ export default {
 button {
   border-color: $prim_color;
   color: white;
+  &:hover {
+    background-color: $prim_color;
+  }
 }
 
 .over-the-title {
