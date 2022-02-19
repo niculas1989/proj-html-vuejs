@@ -34,6 +34,11 @@
       <!-- DA RIVEDERE -->
       <NewsletterSection />
     </section>
+
+    <section id="mailsection">
+      <!-- DA RIVEDERE -->
+      <MailSection />
+    </section>
   </div>
 </template>
 
@@ -44,6 +49,7 @@ import ExcellenceSection from "./ExcellenceSection.vue";
 import PricingSection from "./PricingSection.vue";
 import LatestNews from "./LatestNews.vue";
 import NewsletterSection from "./NewsletterSection.vue";
+import MailSection from "./MailSection.vue";
 
 export default {
   name: "MainSection",
@@ -54,6 +60,7 @@ export default {
     PricingSection,
     LatestNews,
     NewsletterSection,
+    MailSection,
   },
   data() {
     return {
