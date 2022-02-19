@@ -142,7 +142,8 @@ export default {
   ! CAPIRE COME SISTEMARE L'OPACITY NEL BG
   */
   height: 700px;
-  background-image: url(../assets/img/hero-image.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/img/hero-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

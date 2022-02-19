@@ -16,7 +16,7 @@
 
     <!-- Carte che mostrano persone con scritte -->
     <div class="d-flex justify-content-between pt-4 pb-5">
-      <div class="squared text-center">
+      <div class="squared">
         <div id="first-square" class="d-flex align-items-end">
           <p>Increasing creativity is possible for everyone</p>
         </div>
@@ -69,33 +69,34 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
 .squared {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   p {
     color: white;
     font-size: 0.9rem;
     font-weight: 500;
   }
   #first-square {
-    background-image: url("../assets/img/news-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../assets/img/news-1.jpg);
     height: 100%;
-    width: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
+    text-align: center;
   }
   #second-square {
-    background-image: url("../assets/img/news-2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../assets/img/news-2.jpg);
     height: 100%;
-    width: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
   }
   #third-square {
-    background-image: url("../assets/img/news-3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../assets/img/news-3.jpg);
     height: 100%;
-    width: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;

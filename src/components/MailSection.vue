@@ -31,7 +31,9 @@
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button class="btn">SEND</button>
+              <div id="send-button">
+                <button class="btn">SEND</button>
+              </div>
             </div>
           </div>
         </form>
@@ -74,6 +76,13 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+#send-button {
+  button {
+    background-color: $prim_color;
+    color: white;
+  }
+}
+
 #button {
   button {
     border-color: $prim_color;

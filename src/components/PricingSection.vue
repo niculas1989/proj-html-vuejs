@@ -19,7 +19,7 @@
         <div class="col-4">
           <div class="card container">
             <div class="text-center">
-              <i class="fa-solid fa-rocket"></i>
+              <i class="fa-solid fa-rocket pt-3"></i>
               <div><strong>Standard</strong></div>
               <div class="price fw-bolder">$490/<em>mo</em></div>
             </div>
@@ -46,7 +46,7 @@
         <div class="col-4">
           <div class="card container">
             <div class="text-center">
-              <i class="fa-solid fa-briefcase"></i>
+              <i class="fa-solid fa-briefcase pt-5"></i>
               <div><strong>Professional</strong></div>
               <div class="price fw-bolder">$890/<em>mo</em></div>
             </div>
@@ -73,7 +73,7 @@
         <div class="col-4">
           <div class="card container">
             <div class="text-center">
-              <i class="fa-regular fa-gem"></i>
+              <i class="fa-regular fa-gem pt-3"></i>
               <div><strong>Ultimate</strong></div>
               <div class="price fw-bolder">$1.390/<em>mo</em></div>
             </div>
