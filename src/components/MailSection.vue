@@ -42,6 +42,25 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <p>Praesent diam lacus, dapibus sed imperdiet consectur.</p>
+
+        <!-- contatti dell'azienda -->
+        <div id="contacts">
+          <div class="pb-4">
+            <i class="fa-solid fa-phone"></i>
+            <span> +1(305) 1234-5678</span>
+          </div>
+          <div class="pb-4">
+            <i class="fa-solid fa-envelope"></i>
+            <span> hello@example.com</span>
+          </div>
+          <div class="pb-4">
+            <i class="fa-solid fa-location-dot"></i>
+            <span> Main Avenue, 987</span>
+          </div>
+          <div id="button">
+            <button class="btn btn-outline-primary">VIEW MAP</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -55,6 +74,28 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+#button {
+  button {
+    border-color: $prim_color;
+    color: $prim_color;
+    &:hover {
+      background-color: $prim_color;
+      color: white;
+    }
+  }
+}
+
+#contacts {
+  .pb-4 {
+    span {
+      font-size: 0.8rem;
+      color: $prim_color;
+    }
+    i {
+      color: $prim_color;
+    }
+  }
+}
 
 .bck-prim {
   color: $prim_color;
@@ -62,11 +103,6 @@ export default {
   width: 30px;
   background-color: $water_green;
   border-radius: 3px;
-}
-
-button {
-  background-color: $prim_color;
-  color: white;
 }
 
 .over-the-title {
