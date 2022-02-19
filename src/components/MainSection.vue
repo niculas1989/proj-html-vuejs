@@ -26,8 +26,13 @@
 
     <!-- Sezione in cui descriviamo le ultime novità dell'azienda -->
     <section id="news">
-      <!-- DA RIVEDERE -->
+      <!-- DA RIVEDERE anche le funzioni HOVER-->
       <LatestNews />
+    </section>
+
+    <section id="newsletter" class="pt-5">
+      <!-- DA RIVEDERE -->
+      <NewsletterSection />
     </section>
   </div>
 </template>
@@ -38,6 +43,7 @@ import CompanySection from "./CompanySection.vue";
 import ExcellenceSection from "./ExcellenceSection.vue";
 import PricingSection from "./PricingSection.vue";
 import LatestNews from "./LatestNews.vue";
+import NewsletterSection from "./NewsletterSection.vue";
 
 export default {
   name: "MainSection",
@@ -47,6 +53,7 @@ export default {
     ExcellenceSection,
     PricingSection,
     LatestNews,
+    NewsletterSection,
   },
   data() {
     return {
@@ -66,6 +73,11 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+#newsletter {
+  height: 300px;
+}
+
 #performance-section {
   height: 400px;
   background-color: $background_first_section;

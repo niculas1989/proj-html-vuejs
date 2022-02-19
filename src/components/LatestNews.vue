@@ -117,7 +117,7 @@ button {
 
 .over-the-title {
   color: $water_green;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 700;
 }
 
