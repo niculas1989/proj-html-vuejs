@@ -23,6 +23,12 @@
       <!-- DA RIVEDERE -->
       <PricingSection :item="price" />
     </section>
+
+    <!-- Sezione in cui descriviamo le ultime novità dell'azienda -->
+    <section id="news">
+      <!-- DA RIVEDERE -->
+      <LatestNews />
+    </section>
   </div>
 </template>
 
@@ -31,6 +37,7 @@ import PerformanceCard from "./PerformanceCard.vue";
 import CompanySection from "./CompanySection.vue";
 import ExcellenceSection from "./ExcellenceSection.vue";
 import PricingSection from "./PricingSection.vue";
+import LatestNews from "./LatestNews.vue";
 
 export default {
   name: "MainSection",
@@ -39,6 +46,7 @@ export default {
     CompanySection,
     ExcellenceSection,
     PricingSection,
+    LatestNews,
   },
   data() {
     return {
