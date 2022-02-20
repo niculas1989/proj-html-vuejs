@@ -97,7 +97,7 @@ export default {
 
 #excellence {
   height: 700px;
-  background-color: #121117;
+  background-color: $background_dark;
   color: white;
 }
 

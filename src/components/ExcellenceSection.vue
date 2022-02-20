@@ -139,8 +139,7 @@ button {
 
 .square {
   height: 200px;
-
-  background-color: #1e2223;
+  background-color: $background_single_card;
 }
 
 p {

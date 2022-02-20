@@ -7,8 +7,8 @@
     <main>
       <MainSection />
     </main>
-    <footer>
-      <FooterPage />
+    <footer id="footer-page">
+      <FooterPage :elements="footerInfo.about" />
     </footer>
   </div>
 </template>
@@ -32,6 +32,34 @@ export default {
           open: "Mon-Sat-9:00-18:00",
           tel: "+1(305) 1234-5678",
           email: "hello@example.com",
+        },
+      ],
+      footerInfo: [
+        {
+          about: {
+            company: "The Company",
+            institute: "Institutuinal",
+            social: "Social & Events",
+            innovation: "Innovation",
+            environment: "Environment",
+            technology: "Technology",
+          },
+          services: {
+            audit: "Audit & Assurance",
+            financial: "Financial Advisory",
+            analysis: "Analystics M&A",
+            marketing: "Middle Marketing",
+            consulting: "Legal Consulting",
+            risks: "Regulatory Risk",
+          },
+          support: {
+            responsability: "Responsability",
+            terms: "Terms of Use",
+            cookies: "About Cookies",
+            politicy: "Privacy Politicy",
+            accassibility: "Accessibility",
+            info: "Information",
+          },
         },
       ],
     };
