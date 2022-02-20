@@ -113,7 +113,7 @@ export default {
   color: $prim_color;
   height: 20px;
   width: 30px;
-  background-color: $water_green;
+  background-color: #daeced;
   border-radius: 3px;
 }
 

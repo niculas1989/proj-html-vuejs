@@ -139,7 +139,7 @@ li {
   color: $water_green;
   height: 20px;
   width: 30px;
-  background-color: $water_green;
+  background-color: #0e272d;
   border-radius: 3px;
 }
 
