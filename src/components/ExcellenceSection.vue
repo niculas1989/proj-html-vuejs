@@ -116,11 +116,12 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
 .bck-prim {
-  color: $prim_color;
-  height: 20px;
-  width: 30px;
-  background-color: $water_green;
+  color: #fff;
+  height: 25px;
+  width: 45px;
+  background-color: #0e272d;
   border-radius: 3px;
+  opacity: 1;
 }
 
 button {

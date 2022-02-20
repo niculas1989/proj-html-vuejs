@@ -41,11 +41,11 @@
         </div>
       </div>
     </div>
-    <div class="col-6 h-100">
+    <div class="col-6">
       <img
         src="../assets/img/about-3.jpg"
         alt="Man with coffe working"
-        class="img-fluid h-100 w-100"
+        class="img-fluid"
       />
     </div>
   </div>
@@ -59,6 +59,13 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .bck-prim {
   color: $prim_color;
   height: 20px;

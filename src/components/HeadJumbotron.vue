@@ -117,11 +117,12 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
 .bck-prim {
-  color: $prim_color;
+  color: $water_green;
   height: 20px;
   width: 30px;
   background-color: $water_green;
   border-radius: 3px;
+  opacity: 0.5;
 }
 
 #header-top {
@@ -138,9 +139,6 @@ export default {
 }
 
 #jumbotron {
-  /*
-  ! CAPIRE COME SISTEMARE L'OPACITY NEL BG
-  */
   height: 700px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../assets/img/hero-image.png);

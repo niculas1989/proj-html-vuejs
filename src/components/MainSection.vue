@@ -91,8 +91,9 @@ export default {
 }
 
 #company {
-  height: 700px;
-  max-width: 100vw;
+  height: 800px;
+  /* max-width: 100vw; */
+  overflow: hidden;
 }
 
 #excellence {

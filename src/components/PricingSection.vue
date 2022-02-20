@@ -4,7 +4,10 @@
     <div class="text-center pt-5">
       <div class="container-md">
         <span class="over-the-title">MONTHLY PLANS</span>
-        <h2><span class="bck-prim">Pricing</span> Table</h2>
+        <h2>
+          <div class="bck-prim d-inline"><strong>Pricing</strong></div>
+          Table
+        </h2>
         <p>
           We can help you deliver and execute your future, wherever you compete,
           using the latest<br />
@@ -127,8 +130,8 @@ export default {
 .bck-prim {
   color: $prim_color;
   height: 25px;
-  width: 30px;
-  background-color: $water_green;
+  width: 40px;
+  background-color: #cce3de;
   border-radius: 3px;
 }
 
