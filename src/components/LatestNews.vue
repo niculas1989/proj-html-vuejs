@@ -18,17 +18,23 @@
     <div class="d-flex justify-content-between pt-4 pb-5">
       <div class="squared">
         <div id="first-square" class="d-flex align-items-end">
-          <p>Increasing creativity is possible for everyone</p>
+          <div class="d-flex justify-content-center w-100">
+            <p>Increasing creativity is possible for everyone</p>
+          </div>
         </div>
       </div>
       <div class="squared text-center">
         <div id="second-square" class="d-flex align-items-end">
-          <p>Because market research is parto of the business plan</p>
+          <div class="d-flex justify-content-center w-100">
+            <p>Because market research is parto of the business plan</p>
+          </div>
         </div>
       </div>
       <div class="squared text-center">
         <div id="third-square" class="d-flex align-items-end">
-          <p>Working from home is now a trend</p>
+          <div class="d-flex justify-content-center w-100">
+            <p>Working from home is now a trend</p>
+          </div>
         </div>
       </div>
     </div>
