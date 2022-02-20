@@ -7,7 +7,7 @@
     <main>
       <MainSection />
     </main>
-    <footer id="footer-page">
+    <footer>
       <FooterPage :elements="footerInfo.about" />
     </footer>
   </div>
