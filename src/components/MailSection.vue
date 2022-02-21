@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5 pb-5">
     <div class="row">
       <div class="col-6">
         <span class="over-the-title">SEND A MESSAGE</span>
