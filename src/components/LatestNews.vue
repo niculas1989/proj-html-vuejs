@@ -17,8 +17,46 @@
     <!-- Carte che mostrano persone con scritte -->
     <div class="d-flex justify-content-between pt-4 pb-5">
       <div class="squared">
-        <div id="first-square" class="d-flex align-items-end">
-          <div class="d-flex justify-content-center w-100">
+        <div
+          id="first-square"
+          class="d-flex align-items-end position-relative h-100"
+          @mouseenter="hover = true"
+        >
+          <div
+            class="
+              hover-option
+              container
+              pt-5
+              d-flex
+              flex-column
+              justify-content-around
+              h-100
+            "
+            @mouseleave="hover = false"
+            v-if="hover"
+          >
+            <div class="d-flex justify-content-around">
+              <div class="d-flex">
+                <i class="fa-regular fa-user"></i>
+                <p>Andrea Miller</p>
+              </div>
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>2 Days Ago</p>
+              </div>
+            </div>
+
+            <div class="text-center d-flex flex-column">
+              <p class="fs-3">
+                <strong>Increasing creativity is possible for everyone</strong>
+              </p>
+              <span
+                >Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit.</span
+              >
+            </div>
+          </div>
+          <div class="d-flex justify-content-center w-100" v-else>
             <p>Increasing creativity is possible for everyone</p>
           </div>
         </div>
@@ -47,6 +85,7 @@ export default {
   components: {},
   data() {
     return {
+      hover: false,
       elements: [
         {
           increase: {
@@ -74,6 +113,19 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+.hover-option {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  color: #fff;
+}
+
 .squared {
   height: 400px;
   width: 400px;
