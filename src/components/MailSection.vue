@@ -83,6 +83,12 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
 
+input,
+textarea {
+  background-color: #ececec;
+  border: none;
+}
+
 .round-bck {
   height: 40px;
   width: 40px;

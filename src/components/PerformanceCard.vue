@@ -100,6 +100,10 @@ p {
   height: 200px;
   width: 280px;
   background-color: #fff;
+  border-radius: 15px;
+  &:hover {
+    transform: translateY(-10px);
+  }
 }
 
 i {

@@ -54,6 +54,9 @@ h2 {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  input {
+    opacity: 0.4;
+  }
 }
 
 .bck-prim {

@@ -59,16 +59,16 @@
                     <a class="nav-link" href="#">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">SERVICES</a>
+                    <a class="nav-link" href="#">SERVICES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">PRICING</a>
+                    <a class="nav-link" href="#">PRICING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">BLOG</a>
+                    <a class="nav-link" href="#">BLOG</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">GET IN TOUCH</a>
+                    <a class="nav-link" href="#">GET IN TOUCH</a>
                   </li>
                 </ul>
               </div>
@@ -123,6 +123,15 @@ export default {
   background-color: $water_green;
   border-radius: 3px;
   opacity: 0.5;
+}
+
+li:hover {
+  background-color: $water_green;
+  color: white;
+  .nav-item,
+  .nav-link {
+    color: white;
+  }
 }
 
 #header-top {
