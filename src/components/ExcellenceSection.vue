@@ -17,7 +17,7 @@
 
     <!-- 6 quadrati che racchiudono le eccellenze dell'azienda -->
 
-    <div class="row pt-3 g-2">
+    <div class="row pt-3 g-4">
       <div class="col-4">
         <div class="square">
           <div class="container">
@@ -140,7 +140,9 @@ button {
 
 .square {
   height: 200px;
+  width: 350px;
   background-color: $background_single_card;
+  border-radius: 5px;
 }
 
 p {
