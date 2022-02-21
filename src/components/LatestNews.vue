@@ -88,22 +88,20 @@ export default {
       hover: false,
       elements: [
         {
-          increase: {
-            title: "Increasing creativity is possible for everyone",
-            img: "../assets/img/news-1.jpg",
-            alt: "Studing woman,",
-          },
+          title: "Increasing creativity is possible for everyone",
+          img: "../assets/img/news-1.jpg",
+          alt: "Studing woman,",
+        },
 
-          market: {
-            title: "Because market research is parto of the business plan",
-            img: "../assets/img/news-2.jpg",
-            alt: "Man with sunglasses",
-          },
-          work: {
-            title: "Working from home is now a trend",
-            img: "../assets/img/news-3.jpg",
-            alt: "Woman with phone and PC",
-          },
+        {
+          title: "Because market research is parto of the business plan",
+          img: "../assets/img/news-2.jpg",
+          alt: "Man with sunglasses",
+        },
+        {
+          title: "Working from home is now a trend",
+          img: "../assets/img/news-3.jpg",
+          alt: "Woman with phone and PC",
         },
       ],
     };
