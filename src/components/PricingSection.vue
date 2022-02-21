@@ -20,7 +20,12 @@
     <div class="pt-3">
       <div class="row">
         <div class="col-4">
-          <div class="card container">
+          <div class="card container position-relative">
+            <div class="hover-arrow">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
             <div class="text-center">
               <i class="fa-solid fa-rocket pt-3"></i>
               <div><strong>Standard</strong></div>
@@ -52,6 +57,11 @@
               Most<br />
               Popular
             </div>
+            <div class="hover-arrow">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
             <div class="text-center">
               <i class="fa-solid fa-briefcase pt-5"></i>
               <div><strong>Professional</strong></div>
@@ -78,7 +88,12 @@
           </div>
         </div>
         <div class="col-4">
-          <div class="card container">
+          <div class="card container position-relative">
+            <div class="hover-arrow">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
             <div class="text-center">
               <i class="fa-regular fa-gem pt-3"></i>
               <div><strong>Ultimate</strong></div>
@@ -129,6 +144,25 @@ export default {
     position: absolute;
     top: 10px;
     left: -10px;
+  }
+  .card {
+    width: 350px;
+  }
+}
+
+.card:hover {
+  .hover-arrow {
+    display: block;
+  }
+}
+
+.hover-arrow {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: none;
+  i {
+    font-size: bolder;
   }
 }
 

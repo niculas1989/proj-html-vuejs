@@ -129,6 +129,7 @@ button {
   color: white;
   &:hover {
     background-color: $prim_color;
+    color: white;
   }
 }
 
@@ -143,6 +144,16 @@ button {
   width: 350px;
   background-color: $background_single_card;
   border-radius: 5px;
+  i {
+    color: $prim_color;
+  }
+}
+
+.square:hover {
+  i,
+  p {
+    color: #fff;
+  }
 }
 
 p {
