@@ -72,7 +72,12 @@
         </div>
       </div>
     </div>
-    <div id="bottom-footer">
+    <div id="bottom-footer" class="position-relative">
+      <div class="arrow-up">
+        <a href="up">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
       <div class="container h-100">
         <div class="d-flex justify-content-between align-items-center h-100">
           <span
@@ -98,6 +103,22 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+.arrow-up {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  height: 30px;
+  width: 30px;
+  background-color: #19191c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: #000;
+  }
+}
 
 #footer-page {
   height: 350px;
