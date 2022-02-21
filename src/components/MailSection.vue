@@ -10,17 +10,17 @@
             <div class="col-12 pb-3">
               <div class="d-flex">
                 <span class="pe-3">
-                  <input type="text" placeholder="Name" />
+                  <input type="text" placeholder="Name" v-model="name" />
                 </span>
-                <input type="mail" placeholder="Mail" />
+                <input type="mail" placeholder="Mail" v-model="mail" />
               </div>
             </div>
             <div class="col-12">
               <div class="d-flex">
                 <span class="pe-3">
-                  <input type="text" placeholder="Phone" />
+                  <input type="text" placeholder="Phone" v-model="phone" />
                 </span>
-                <input type="text" placeholder="More info" />
+                <input type="text" placeholder="More info" v-model="info" />
               </div>
             </div>
             <div class="col-12 pt-3 w-100">
@@ -29,10 +29,11 @@
                   class="form-control w-100"
                   rows="4"
                   placeholder="Message"
+                  v-model="message"
                 ></textarea>
               </div>
               <div id="send-button">
-                <button class="btn">SEND</button>
+                <button class="btn" @click="sendMail()">SEND</button>
               </div>
             </div>
           </div>
@@ -77,6 +78,35 @@
 <script>
 export default {
   name: "MailSection",
+  data() {
+    return {
+      name: "",
+      mail: "",
+      phone: "",
+      info: "",
+      message: "",
+    };
+  },
+  methods: {
+    sendMail() {
+      if (
+        !this.name ||
+        !this.mail ||
+        !this.phone ||
+        !this.info ||
+        !this.message
+      ) {
+        alert("Required fields.");
+      } else
+        alert("Mail sent successfully. You will be sent back to the home.");
+
+      this.name = "";
+      this.mail = "";
+      this.phone = "";
+      this.info = "";
+      this.message = "";
+    },
+  },
 };
 </script>
 

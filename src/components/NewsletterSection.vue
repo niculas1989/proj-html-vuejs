@@ -17,6 +17,7 @@
                 type="text"
                 class="form-control form-control-sm"
                 placeholder="Name"
+                v-model="name"
               />
             </div>
             <div class="pb-3">
@@ -24,10 +25,13 @@
                 type="email"
                 class="form-control form-control-sm"
                 placeholder="Email"
+                v-model="mail"
               />
             </div>
 
-            <button type="submit" class="btn">SUBSCRIBE</button>
+            <button type="submit" class="btn" @click="formUploaded()">
+              SUBSCRIBE
+            </button>
           </form>
         </div>
       </div>
@@ -38,6 +42,21 @@
 <script>
 export default {
   name: "NewsletterSection",
+  data() {
+    return {
+      name: "",
+      mail: "",
+    };
+  },
+  methods: {
+    formUploaded() {
+      if (!this.name || !this.mail) {
+        alert("Please enter a name and a e-mail");
+      } else {
+        alert("All done. You will be sent back to the home. ");
+      }
+    },
+  },
 };
 </script>
 

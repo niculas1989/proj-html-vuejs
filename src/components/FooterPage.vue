@@ -24,19 +24,30 @@
           </div>
         </div>
 
-        <!-- TODO ragionare sul creare delle carte -->
         <div class="col-3">
           <div class="square">
             <ul>
               <li>
                 <h6 class="pt-3">About</h6>
               </li>
-              <li class="pt-2">> The Company</li>
-              <li>> Insitutional</li>
-              <li>> Social & Events</li>
-              <li>> Innovation</li>
-              <li>> Environment</li>
-              <li>> Technology</li>
+              <li class="pt-2">
+                <a href="#"> > The Company </a>
+              </li>
+              <li>
+                <a href="#">> Insitutional</a>
+              </li>
+              <li>
+                <a href="#">> Social & Events</a>
+              </li>
+              <li>
+                <a href="#">> Innovation</a>
+              </li>
+              <li>
+                <a href="#">> Environment</a>
+              </li>
+              <li>
+                <a href="#">> Technology</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -46,12 +57,24 @@
               <li>
                 <h6 class="pt-3">Services</h6>
               </li>
-              <li class="pt-2">> Audit & Assurance</li>
-              <li>> Financial Advisory</li>
-              <li>> Analystic M&A</li>
-              <li>> Middle Marketing</li>
-              <li>> Legal Consulting</li>
-              <li>> Regulatory Risk</li>
+              <li class="pt-2">
+                <a href="#"> > Audit & Assurance </a>
+              </li>
+              <li>
+                <a href="#">> Financial Advisory</a>
+              </li>
+              <li>
+                <a href="#">> Analystic Advisory</a>
+              </li>
+              <li>
+                <a href="#">> Middle Marketing</a>
+              </li>
+              <li>
+                <a href="#">> Legal consulting</a>
+              </li>
+              <li>
+                <a href="#">> Regulatory Risk</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,12 +84,24 @@
               <li>
                 <h6 class="pt-3">Support</h6>
               </li>
-              <li class="pt-2">> Responsability</li>
-              <li>> Term of Use</li>
-              <li>> About Cookies</li>
-              <li>> Privacy Policy</li>
-              <li>> Accessibility</li>
-              <li>> Information</li>
+              <li class="pt-2">
+                <a href="#"> > Responsability </a>
+              </li>
+              <li>
+                <a href="#">> Term of Use</a>
+              </li>
+              <li>
+                <a href="#">> About Cookies</a>
+              </li>
+              <li>
+                <a href="#">> Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">> Accessibility</a>
+              </li>
+              <li>
+                <a href="#">> Information</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -158,6 +193,13 @@ li {
   height: 200px;
   background-color: $background_single_card;
   border-radius: 5px;
+  a {
+    color: $text_primary;
+    text-decoration: none;
+    &:hover {
+      color: $prim_color;
+    }
+  }
 }
 
 .bck-prim {

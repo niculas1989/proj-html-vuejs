@@ -15,92 +15,37 @@
     </div>
 
     <!-- Carte che mostrano persone con scritte -->
-    <div class="d-flex justify-content-between pt-4 pb-5">
-      <div class="squared">
-        <div
-          id="first-square"
-          class="d-flex align-items-end position-relative h-100"
-          @mouseenter="hover = true"
-        >
-          <div
-            class="
-              hover-option
-              container
-              pt-5
-              d-flex
-              flex-column
-              justify-content-around
-              h-100
-            "
-            @mouseleave="hover = false"
-            v-if="hover"
-          >
-            <div class="d-flex justify-content-around">
-              <div class="d-flex">
-                <i class="fa-regular fa-user"></i>
-                <p class="ps-2">Andrea Miller</p>
-              </div>
-              <div class="d-flex">
-                <i class="fa-regular fa-clock"></i>
-                <p class="ps-2">2 Days Ago</p>
-              </div>
-            </div>
 
-            <div class="text-center d-flex flex-column">
-              <p class="fs-3">
-                <strong>Increasing creativity is possible for everyone</strong>
-              </p>
-              <span
-                >Lorem ipsum dolor sit amet,<br />
-                consectetur adipiscing elit.</span
-              >
-            </div>
-          </div>
-          <div class="d-flex justify-content-center w-100" v-else>
-            <p>Increasing creativity is possible for everyone</p>
-          </div>
-        </div>
-      </div>
-      <div class="squared text-center">
-        <div id="second-square" class="d-flex align-items-end">
-          <div class="d-flex justify-content-center w-100">
-            <p>Because market research is parto of the business plan</p>
-          </div>
-        </div>
-      </div>
-      <div class="squared text-center">
-        <div id="third-square" class="d-flex align-items-end">
-          <div class="d-flex justify-content-center w-100">
-            <p>Working from home is now a trend</p>
-          </div>
-        </div>
-      </div>
+    <div class="d-flex justify-content-between pt-4 pb-5">
+      <GenerateCards :item="elements" />
     </div>
   </div>
 </template>
 
 <script>
+import GenerateCards from "./GenerateCards.vue";
 export default {
   name: "LatestNews",
-  components: {},
+  components: {
+    GenerateCards,
+  },
   data() {
     return {
       hover: false,
       elements: [
         {
           title: "Increasing creativity is possible for everyone",
-          img: "../assets/img/news-1.jpg",
+          img: "news-1.jpg",
           alt: "Studing woman,",
         },
-
         {
           title: "Because market research is parto of the business plan",
-          img: "../assets/img/news-2.jpg",
+          img: "news-2.jpg",
           alt: "Man with sunglasses",
         },
         {
           title: "Working from home is now a trend",
-          img: "../assets/img/news-3.jpg",
+          img: "news-3.jpg",
           alt: "Woman with phone and PC",
         },
       ],
@@ -111,54 +56,6 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
-
-.hover-option {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 15px;
-  color: #fff;
-}
-
-.squared {
-  height: 400px;
-  width: 400px;
-  p {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-}
-
-#first-square {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../assets/img/news-1.jpg);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-  text-align: center;
-}
-#second-square {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../assets/img/news-2.jpg);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-}
-#third-square {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../assets/img/news-3.jpg);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-}
 
 .bck-prim {
   color: $prim_color;
