@@ -47,17 +47,23 @@
 
         <!-- contatti dell'azienda -->
         <div id="contacts">
-          <div class="pb-4">
-            <i class="fa-solid fa-phone"></i>
-            <span> +1(305) 1234-5678</span>
+          <div class="pb-4 d-flex align-items-center">
+            <span class="round-bck">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span class="ps-2"> +1(305) 1234-5678</span>
           </div>
-          <div class="pb-4">
-            <i class="fa-solid fa-envelope"></i>
-            <span> hello@example.com</span>
+          <div class="pb-4 d-flex align-items-center">
+            <div class="round-bck">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <span class="ps-2"> hello@example.com</span>
           </div>
-          <div class="pb-4">
-            <i class="fa-solid fa-location-dot"></i>
-            <span> Main Avenue, 987</span>
+          <div class="pb-4 d-flex align-items-center">
+            <div class="round-bck">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span class="ps-2"> Main Avenue, 987</span>
           </div>
           <div id="button">
             <button class="btn btn-outline-primary">VIEW MAP</button>
@@ -76,6 +82,19 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+.round-bck {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #daeced;
+
+  /* CENTRATURA */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #send-button {
   button {
     background-color: $prim_color;
