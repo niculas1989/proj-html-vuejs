@@ -73,11 +73,11 @@
       </div>
     </div>
     <div id="bottom-footer" class="position-relative">
-      <div class="arrow-up">
-        <a href="up">
+      <a href="up">
+        <div class="arrow-up">
           <i class="fa-solid fa-arrow-up"></i>
-        </a>
-      </div>
+        </div>
+      </a>
       <div class="container h-100">
         <div class="d-flex justify-content-between align-items-center h-100">
           <span
@@ -115,8 +115,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  a {
-    color: #000;
+}
+a {
+  color: #000;
+  &:hover {
+    transform: translateY(-10px);
+    color: $prim_color;
   }
 }
 

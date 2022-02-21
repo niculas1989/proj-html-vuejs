@@ -53,22 +53,22 @@
               <div id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="up">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="company">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
+                    <a class="nav-link" href="excellence">SERVICES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">PRICING</a>
+                    <a class="nav-link" href="pricing">PRICING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
+                    <a class="nav-link" href="news">BLOG</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">GET IN TOUCH</a>
+                    <a class="nav-link" href="mailsection">GET IN TOUCH</a>
                   </li>
                 </ul>
               </div>
@@ -116,6 +116,11 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+a:hover {
+  color: white;
+}
+
 .bck-prim {
   color: $water_green;
   height: 20px;

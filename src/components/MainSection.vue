@@ -1,44 +1,44 @@
 <template>
   <div>
     <!-- Sezione in cui raccogliere info generiche sull'azienda -->
-    <section id="performance-section">
+    <div id="performance-section">
       <!-- DA RIVEDERE -->
       <PerformanceCard />
-    </section>
+    </div>
 
     <!-- Sezione in cui descriviamo l'azienda -->
-    <section id="company">
+    <div id="company">
       <!-- DA RIVEDERE -->
       <CompanySection />
-    </section>
+    </div>
 
     <!-- Sezione in cui descriviamo le eccellenze dell'azienda -->
-    <section id="excellence">
+    <div id="excellence">
       <!-- DA RIVEDERE -->
       <ExcellenceSection />
-    </section>
+    </div>
 
     <!-- Sezione in cui descriviamo le eccellenze dell'azienda -->
-    <section id="pricing">
+    <div id="pricing">
       <!-- DA RIVEDERE -->
       <PricingSection :item="price" />
-    </section>
+    </div>
 
     <!-- Sezione in cui descriviamo le ultime novità dell'azienda -->
-    <section id="news">
+    <div id="news">
       <!-- DA RIVEDERE anche le funzioni HOVER-->
       <LatestNews />
-    </section>
+    </div>
 
-    <section id="newsletter" class="pt-5">
+    <div id="newsletter" class="pt-5">
       <!-- DA RIVEDERE -->
       <NewsletterSection />
-    </section>
+    </div>
 
-    <section id="mailsection">
+    <div id="mailsection">
       <!-- DA RIVEDERE -->
       <MailSection />
-    </section>
+    </div>
   </div>
 </template>
 

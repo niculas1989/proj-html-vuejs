@@ -70,6 +70,9 @@ h2 {
 button {
   background-color: $prim_color;
   color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .over-the-title {

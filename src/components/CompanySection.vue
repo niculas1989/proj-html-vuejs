@@ -1,5 +1,5 @@
 <template>
-  <div class="row h-100">
+  <div class="row h-100" id="company">
     <div class="col-4 offset-2 h-100">
       <div class="d-flex flex-column justify-content-center h-100">
         <span class="over-the-title">ABOUT THE NETWORK</span>
