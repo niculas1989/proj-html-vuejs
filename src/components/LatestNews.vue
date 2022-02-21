@@ -38,11 +38,11 @@
             <div class="d-flex justify-content-around">
               <div class="d-flex">
                 <i class="fa-regular fa-user"></i>
-                <p>Andrea Miller</p>
+                <p class="ps-2">Andrea Miller</p>
               </div>
               <div class="d-flex">
                 <i class="fa-regular fa-clock"></i>
-                <p>2 Days Ago</p>
+                <p class="ps-2">2 Days Ago</p>
               </div>
             </div>
 
@@ -134,31 +134,32 @@ export default {
     font-size: 0.9rem;
     font-weight: 500;
   }
-  #first-square {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../assets/img/news-1.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    text-align: center;
-  }
-  #second-square {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../assets/img/news-2.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-  }
-  #third-square {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../assets/img/news-3.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-  }
+}
+
+#first-square {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/img/news-1.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  text-align: center;
+}
+#second-square {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/img/news-2.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+#third-square {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/img/news-3.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
 }
 
 .bck-prim {
