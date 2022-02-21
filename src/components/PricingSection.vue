@@ -47,7 +47,11 @@
           </div>
         </div>
         <div class="col-4">
-          <div class="card container">
+          <div class="card container position-relative">
+            <div class="badge rounded-pill">
+              Most<br />
+              Popular
+            </div>
             <div class="text-center">
               <i class="fa-solid fa-briefcase pt-5"></i>
               <div><strong>Professional</strong></div>
@@ -114,6 +118,19 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+.container {
+  overflow: hidden;
+  .badge {
+    background-color: $water_green;
+    width: 80px;
+    font-size: 0.6rem;
+
+    position: absolute;
+    top: 10px;
+    left: -10px;
+  }
+}
 
 .row {
   .card {
