@@ -2,21 +2,21 @@
   <div id="footer-page" class="d-flex flex-column justify-content-between">
     <div class="container pt-5">
       <div class="row">
-        <div class="col-3">
+        <div class="col-3" v-for="(element, index) in info" :key="index">
           <div class="text-center">
             <h5><span class="bck-prim">NEXT</span> GEN</h5>
             <p>A Functional HTML Template for Corporate & Business.</p>
             <div class="pb-1">
               <i class="fa-solid fa-phone"></i>
-              <p class="d-inline ps-2">+1(305) 1234-5678</p>
+              <p class="d-inline ps-2">{{ element.tel }}</p>
             </div>
             <div class="pb-1">
               <i class="fa-solid fa-envelope"></i>
-              <p class="d-inline ps-2">hello@example.com</p>
+              <p class="d-inline ps-2">{{ element.email }}</p>
             </div>
             <div class="pb-3">
               <i class="fa-solid fa-location-dot"></i>
-              <p class="d-inline ps-2">Main Avenue, 987</p>
+              <p class="d-inline ps-2">{{ element.adress }}</p>
             </div>
             <div id="button">
               <button class="btn btn-outline-primary">GET IN TOUCH</button>
@@ -133,7 +133,7 @@
 <script>
 export default {
   name: "FooterPage",
-  props: ["elements", "items", "groups"],
+  props: ["elements", "items", "groups", "info"],
 };
 </script>
 

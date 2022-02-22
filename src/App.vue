@@ -11,6 +11,7 @@
         :elements="footerAbout"
         :items="footerServices"
         :groups="footerSupport"
+        :info="headerInfo"
       />
     </footer>
   </div>
@@ -35,6 +36,7 @@ export default {
           open: "Mon-Sat-9:00-18:00",
           tel: "+1(305) 1234-5678",
           email: "hello@example.com",
+          adress: "Main Avenue, 987",
         },
       ],
       footerAbout: [

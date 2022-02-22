@@ -1,9 +1,10 @@
 <template>
   <div>
     <!-- Sezione in cui raccogliere info generiche sull'azienda -->
-    <div id="performance-section">
+    <div id="performance-section" class="position-relative">
       <!-- DA RIVEDERE -->
       <PerformanceCard />
+      <div class="dot-style"></div>
     </div>
 
     <!-- Sezione in cui descriviamo l'azienda -->
@@ -13,7 +14,8 @@
     </div>
 
     <!-- Sezione in cui descriviamo le eccellenze dell'azienda -->
-    <div id="excellence">
+    <div id="excellence" class="position-relative">
+      <div class="dot-style-upper"></div>
       <!-- DA RIVEDERE -->
       <ExcellenceSection />
     </div>
@@ -80,6 +82,32 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
+
+.dot-style {
+  z-index: 1;
+  height: 80px;
+  width: 140px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 20px 20px;
+  background-image: radial-gradient($prim_color 25%, transparent 25%);
+  opacity: 0.3;
+}
+
+.dot-style-upper {
+  z-index: 1;
+  height: 80px;
+  width: 140px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 20px 20px;
+  background-image: radial-gradient($prim_color 25%, transparent 25%);
+  opacity: 0.3;
+}
 
 #newsletter {
   height: 300px;
