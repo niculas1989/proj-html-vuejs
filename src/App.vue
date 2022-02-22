@@ -7,7 +7,11 @@
       <MainSection />
     </main>
     <footer>
-      <FooterPage :elements="footerInfo.about" />
+      <FooterPage
+        :elements="footerAbout"
+        :items="footerServices"
+        :groups="footerSupport"
+      />
     </footer>
   </div>
 </template>
@@ -33,32 +37,37 @@ export default {
           email: "hello@example.com",
         },
       ],
-      footerInfo: [
+      footerAbout: [
         {
-          about: {
-            company: "The Company",
-            institute: "Institutuinal",
-            social: "Social & Events",
-            innovation: "Innovation",
-            environment: "Environment",
-            technology: "Technology",
-          },
-          services: {
-            audit: "Audit & Assurance",
-            financial: "Financial Advisory",
-            analysis: "Analystics M&A",
-            marketing: "Middle Marketing",
-            consulting: "Legal Consulting",
-            risks: "Regulatory Risk",
-          },
-          support: {
-            responsability: "Responsability",
-            terms: "Terms of Use",
-            cookies: "About Cookies",
-            politicy: "Privacy Politicy",
-            accassibility: "Accessibility",
-            info: "Information",
-          },
+          title: "About",
+          company: "The Company",
+          institute: "Institutuinal",
+          social: "Social & Events",
+          innovation: "Innovation",
+          environment: "Environment",
+          technology: "Technology",
+        },
+      ],
+      footerServices: [
+        {
+          title: "Services",
+          audit: "Audit & Assurance",
+          financial: "Financial Advisory",
+          analysis: "Analystics M&A",
+          marketing: "Middle Marketing",
+          consulting: "Legal Consulting",
+          risks: "Regulatory Risk",
+        },
+      ],
+      footerSupport: [
+        {
+          title: "Support",
+          responsability: "Responsability",
+          terms: "Terms of Use",
+          cookies: "About Cookies",
+          politicy: "Privacy Politicy",
+          accassibility: "Accessibility",
+          info: "Information",
         },
       ],
     };

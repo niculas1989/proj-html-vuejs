@@ -26,81 +26,81 @@
 
         <div class="col-3">
           <div class="square">
-            <ul>
+            <ul v-for="(e, index) in elements" :key="index">
               <li>
-                <h6 class="pt-3">About</h6>
+                <h6 class="pt-3">{{ e.title }}</h6>
               </li>
               <li class="pt-2">
-                <a href="#"> > The Company </a>
+                <a href="#"> > {{ e.company }} </a>
               </li>
               <li>
-                <a href="#">> Insitutional</a>
+                <a href="#">> {{ e.institute }}</a>
               </li>
               <li>
-                <a href="#">> Social & Events</a>
+                <a href="#">> {{ e.social }}</a>
               </li>
               <li>
-                <a href="#">> Innovation</a>
+                <a href="#">> {{ e.innovation }}</a>
               </li>
               <li>
-                <a href="#">> Environment</a>
+                <a href="#">> {{ e.environment }}</a>
               </li>
               <li>
-                <a href="#">> Technology</a>
+                <a href="#">> {{ e.technology }}</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-3">
           <div class="square">
-            <ul>
+            <ul v-for="(i, index) in items" :key="index">
               <li>
-                <h6 class="pt-3">Services</h6>
+                <h6 class="pt-3">{{ i.title }}</h6>
               </li>
               <li class="pt-2">
-                <a href="#"> > Audit & Assurance </a>
+                <a href="#"> > {{ i.audit }} </a>
               </li>
               <li>
-                <a href="#">> Financial Advisory</a>
+                <a href="#">> {{ i.financial }}</a>
               </li>
               <li>
-                <a href="#">> Analystic Advisory</a>
+                <a href="#">> {{ i.analysis }}</a>
               </li>
               <li>
-                <a href="#">> Middle Marketing</a>
+                <a href="#">> {{ i.marketing }}</a>
               </li>
               <li>
-                <a href="#">> Legal consulting</a>
+                <a href="#">> {{ i.consulting }}</a>
               </li>
               <li>
-                <a href="#">> Regulatory Risk</a>
+                <a href="#">> {{ i.risks }}</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-3">
           <div class="square">
-            <ul>
+            <ul v-for="(g, index) in groups" :key="index">
               <li>
-                <h6 class="pt-3">Support</h6>
+                <h6 class="pt-3">{{ g.title }}</h6>
               </li>
               <li class="pt-2">
-                <a href="#"> > Responsability </a>
+                <a href="#"> > {{ g.responsability }} </a>
               </li>
               <li>
-                <a href="#">> Term of Use</a>
+                <a href="#">> {{ g.terms }}</a>
               </li>
               <li>
-                <a href="#">> About Cookies</a>
+                <a href="#">> {{ g.cookies }}</a>
               </li>
               <li>
-                <a href="#">> Privacy Policy</a>
+                <a href="#">> {{ g.politicy }}</a>
               </li>
               <li>
-                <a href="#">> Accessibility</a>
+                <a href="#">> {{ g.accassibility }}</a>
               </li>
               <li>
-                <a href="#">> Information</a>
+                <a href="#">> {{ g.info }}</a>
               </li>
             </ul>
           </div>
@@ -133,6 +133,7 @@
 <script>
 export default {
   name: "FooterPage",
+  props: ["elements", "items", "groups"],
 };
 </script>
 

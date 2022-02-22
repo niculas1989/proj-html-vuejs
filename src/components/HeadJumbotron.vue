@@ -159,6 +159,7 @@ li:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   #title {
     font-weight: 800;
   }
