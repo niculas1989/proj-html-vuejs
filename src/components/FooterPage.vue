@@ -25,85 +25,13 @@
         </div>
 
         <div class="col-3">
-          <div class="square">
-            <ul v-for="(e, index) in elements" :key="index">
-              <li>
-                <h6 class="pt-3">{{ e.title }}</h6>
-              </li>
-              <li class="pt-2">
-                <a href="#"> > {{ e.company }} </a>
-              </li>
-              <li>
-                <a href="#">> {{ e.institute }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ e.social }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ e.innovation }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ e.environment }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ e.technology }}</a>
-              </li>
-            </ul>
-          </div>
+          <FooterElement :elements="elements" />
         </div>
         <div class="col-3">
-          <div class="square">
-            <ul v-for="(i, index) in items" :key="index">
-              <li>
-                <h6 class="pt-3">{{ i.title }}</h6>
-              </li>
-              <li class="pt-2">
-                <a href="#"> > {{ i.audit }} </a>
-              </li>
-              <li>
-                <a href="#">> {{ i.financial }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ i.analysis }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ i.marketing }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ i.consulting }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ i.risks }}</a>
-              </li>
-            </ul>
-          </div>
+          <FooterElement :elements="items" />
         </div>
         <div class="col-3">
-          <div class="square">
-            <ul v-for="(g, index) in groups" :key="index">
-              <li>
-                <h6 class="pt-3">{{ g.title }}</h6>
-              </li>
-              <li class="pt-2">
-                <a href="#"> > {{ g.responsability }} </a>
-              </li>
-              <li>
-                <a href="#">> {{ g.terms }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ g.cookies }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ g.politicy }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ g.accassibility }}</a>
-              </li>
-              <li>
-                <a href="#">> {{ g.info }}</a>
-              </li>
-            </ul>
-          </div>
+          <FooterElement :elements="groups" />
         </div>
       </div>
     </div>
@@ -131,9 +59,11 @@
 </template>
 
 <script>
+import FooterElement from "./FooterElement.vue";
 export default {
   name: "FooterPage",
   props: ["elements", "items", "groups", "info"],
+  components: { FooterElement },
 };
 </script>
 
@@ -174,30 +104,6 @@ a {
       color: darkred;
     }
     #proud {
-      color: $prim_color;
-    }
-  }
-}
-
-ul,
-li {
-  list-style-type: none;
-  font-size: 0.6rem;
-  color: $text_primary;
-  padding-bottom: 0.3rem;
-  h6 {
-    color: white;
-  }
-}
-
-.square {
-  height: 200px;
-  background-color: $background_single_card;
-  border-radius: 5px;
-  a {
-    color: $text_primary;
-    text-decoration: none;
-    &:hover {
       color: $prim_color;
     }
   }

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- TODO: rivedere la centralizzazione -->
     <header>
       <HeadJumbotron :info="headerInfo" />
     </header>
@@ -42,34 +43,34 @@ export default {
       footerAbout: [
         {
           title: "About",
-          company: "The Company",
-          institute: "Institutuinal",
-          social: "Social & Events",
-          innovation: "Innovation",
-          environment: "Environment",
-          technology: "Technology",
+          one: "The Company",
+          two: "Institutuinal",
+          three: "Social & Events",
+          four: "Innovation",
+          five: "Environment",
+          six: "Technology",
         },
       ],
       footerServices: [
         {
           title: "Services",
-          audit: "Audit & Assurance",
-          financial: "Financial Advisory",
-          analysis: "Analystics M&A",
-          marketing: "Middle Marketing",
-          consulting: "Legal Consulting",
-          risks: "Regulatory Risk",
+          one: "Audit & Assurance",
+          two: "Financial Advisory",
+          three: "Analystics M&A",
+          four: "Middle Marketing",
+          five: "Legal Consulting",
+          six: "Regulatory Risk",
         },
       ],
       footerSupport: [
         {
           title: "Support",
-          responsability: "Responsability",
-          terms: "Terms of Use",
-          cookies: "About Cookies",
-          politicy: "Privacy Politicy",
-          accassibility: "Accessibility",
-          info: "Information",
+          one: "Responsability",
+          two: "Terms of Use",
+          three: "About Cookies",
+          four: "Privacy Politicy",
+          five: "Accessibility",
+          six: "Information",
         },
       ],
     };
