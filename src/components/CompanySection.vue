@@ -2,13 +2,7 @@
   <div class="row h-100 position-relative" id="company">
     <div class="col-4 offset-2 h-100">
       <div class="d-flex flex-column justify-content-center h-100">
-        <span class="over-the-title">ABOUT THE NETWORK</span>
-        <h2 class="fw-bolder"><span class="bck-prim">The</span> Company</h2>
-        <span
-          >For 12 years we have been providing audit and warranty, financial
-          advice, risk advice, taxes and releted services to select
-          clients.</span
-        >
+        <TitleCard :title="title" />
         <div class="row pt-3">
           <div class="col-6">
             <i class="fa-solid fa-award pb-3"></i>
@@ -52,8 +46,11 @@
 </template>
 
 <script>
+import TitleCard from "./TitleCard.vue";
 export default {
   name: "CompanySection",
+  props: ["title"],
+  components: { TitleCard },
 };
 </script>
 
@@ -66,14 +63,6 @@ img {
   overflow: hidden;
 }
 
-.bck-prim {
-  color: $prim_color;
-  height: 20px;
-  width: 30px;
-  background-color: #daeced;
-  border-radius: 3px;
-}
-
 p {
   font-size: 0.6rem;
   color: $text_primary;
@@ -81,12 +70,6 @@ p {
 
 #colored {
   color: $prim_color;
-}
-
-.over-the-title {
-  color: $water_green;
-  font-weight: 800;
-  font-size: 0.8rem;
 }
 
 i {

@@ -5,7 +5,7 @@
       <HeadJumbotron :info="headerInfo" />
     </header>
     <main>
-      <MainSection />
+      <MainSection :title="companySection" />
     </main>
     <footer>
       <FooterPage
@@ -71,6 +71,15 @@ export default {
           four: "Privacy Politicy",
           five: "Accessibility",
           six: "Information",
+        },
+      ],
+      companySection: [
+        {
+          upper: "ABOUT THE NETWORK",
+          bckTitle: "The",
+          restOfTitle: "Company",
+          paragraph:
+            "For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and releted services to select clients.",
         },
       ],
     };

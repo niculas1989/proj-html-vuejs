@@ -10,7 +10,7 @@
     <!-- Sezione in cui descriviamo l'azienda -->
     <div id="company">
       <!-- DA RIVEDERE -->
-      <CompanySection />
+      <CompanySection :title="title" />
     </div>
 
     <!-- Sezione in cui descriviamo le eccellenze dell'azienda -->
@@ -64,6 +64,7 @@ export default {
     NewsletterSection,
     MailSection,
   },
+  props: ["title"],
   data() {
     return {
       price: [
