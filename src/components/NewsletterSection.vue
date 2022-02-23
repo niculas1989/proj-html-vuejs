@@ -2,12 +2,13 @@
   <div class="h-100" id="know-first">
     <div class="container h-100">
       <div class="row h-100 d-flex align-items-center">
-        <div class="col-5 offset-1">
-          <span class="over-the-title">NEWSLETTER</span>
-          <h2 class="pt-2 pb-2"><span class="bck-prim">Know</span> First</h2>
+        <div class="col-5 offset-1" v-for="(e, i) in newsletterTitle" :key="i">
+          <span class="over-the-title">{{ e.upper }}</span>
+          <h2 class="pt-2 pb-2">
+            <span class="bck-prim">{{ e.bckTitle }}</span> {{ e.restOfTitle }}
+          </h2>
           <p>
-            Follow closely and receive content about our company and the news ot
-            the current market.
+            {{ e.paragraph }}
           </p>
         </div>
         <div class="col-5">
@@ -46,6 +47,15 @@ export default {
     return {
       name: "",
       mail: "",
+      newsletterTitle: [
+        {
+          upper: "NEWSLETTER",
+          bckTitle: "Know",
+          restOfTitle: "First",
+          paragraph:
+            "Follow closely and receive content about our company and the news ot the current market.",
+        },
+      ],
     };
   },
   methods: {
